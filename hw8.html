@@ -13,10 +13,19 @@
 <a href="Homework 8.png">
     <img src="Homework 8.png" alt="Homework 8" width='500px'>
     </a>
-<h3>I created a choropleth map illustrating the mean level of exposure to PM2.5, or inhalable particulate matter smaller than 2.5 micrometers, for each country in 2020. PM2.5 includes many different chemicals, and can be emitted by construction sites, unpaved roads,
-    cars, fires, or powerplants. PM2.5 is a key indicator of pollution levels. The CSV dataset I used, downloaded from the
-    Organisation for Economic Co-Operation and Development, provided the data in micrgrams per meters squared. An obstacle I ran into while joining my datasets were discrepencies in country naming. In order to remedy this,
-    I cleaned my CSV, making sure the country names matched the vector of the globe. I used the natural breaks ratio; in this case, it gave the clearest picture of the data, utilizing the full range of the gradient.
+<h3>Through my map, I answer the question, "What is the relationship between areas of significant biodiversity and large forested regions
+    In the Hudson River Estuary?" To answer this question, I used two datasets from the New York State Government website: one including
+    22 landscape regions determined to have a high concentration of regional biodiversity, and the other including polygons of large contiguous
+    forest areas whose size and natural condition are suitable for the mainenance of ecological processes and forest communities.
+
+    The first geoprocessing tool I used was "Dissolve." Because the Hudson River, split into its upper, middle, and lower sections, was included
+    as Signficant Biodiversity Areas (or SBAs), and therefore wouldn't stand out to viewers, I wanted to make its location clear and dissolve the 
+    three regions of the river into one. Secondly, I used "Intersection" to create a new layer with regions of overlap between SBAs and large forest 
+    blocks. This layer is clear and hatched in the map, allowing for the the intermediary color resulting from the overlap of the opaque forest block 
+    and SBA layers show through, making the intersection clear to viewers.
+
+    My map reveals that although large forest patches in the Hudson River Estuary typically support higher concentrations of biodiversity,
+    high levels exist in more fragmented forests and other landcover types also.
 </h3>
 <!-- Data Sources and New Data Files -->
 <h2>New Data Files</h2>
